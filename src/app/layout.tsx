@@ -6,9 +6,15 @@ import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Story Surge',
-  description: 'Engage.Explore.Experience.',
+
+
+export const metadata:Metadata ={
+  title:{
+    absolute:"",
+    default:"Story Surge",
+    template:"%s - Your Reading Companion",
+  },
+  description: 'Explore. Engage. Evolve.',
 }
 
 export default function RootLayout({
