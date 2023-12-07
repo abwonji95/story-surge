@@ -92,25 +92,25 @@ export default function RootLayout({
         {children}
         
 <footer className="bg-white">
-<div className='mx-auto row-auto max-w-7xl space-y-2 block justify-center p-6 lg:px-8'>
+<div className='mx-auto row-auto text-center mr-4 max-w-7xl space-y-2 block justify-center p-6 lg:px-8'>
 <div className='text-sm row-auto font-semibold leading-6 text-gray-900'>
-<Link href="/">Home</Link>
-<Link href="/redeem">Redeem</Link>
-<Link href="/my-books">My Books</Link>
+<Link href="/" className='mx-4'>Home</Link>
+<Link href="/redeem" className='mx-4'>Redeem</Link>
+<Link href="/my-books" className='mx-4'>My Books</Link>
 </div>
 
 <div className='text-sm row-auto font-semibold leading-6 text-gray-900'>
-<Link href="/help-center">Help Center</Link>
-<Link href="/legal-notices">Legal notices</Link>
-<Link href="/privacy-policy">Privacy Policy</Link>
-<Link href="/terms-conditions">Terms and Conditions</Link>
-<Link href="/activate-device">Activate Your device</Link>
+<Link href="/help-center" className='mx-4'>Help Center</Link>
+<Link href="/legal-notices" className='mx-4'>Legal notices</Link>
+<Link href="/privacy-policy" className='mx-4'>Privacy Policy</Link>
+<Link href="/terms-conditions" className='mx-4'>Terms and Conditions</Link>
+<Link href="/activate-device" className='mx-4'>Activate Your device</Link>
 </div>
 <div className='text-sm row-auto font-semibold leading-6 text-gray-900'>
-<Link href="/ads">Interest Based Ads</Link>
-<Link href="/personal-info">Do Not Sell My Personal Information</Link>
-<Link href="/privacy-policy">Closed Captioning Inquiries</Link>
-<p>© 2023 Movies Anywhere. All Rights Reserved.</p>
+<Link href="/ads" className='mx-4'>Interest Based Ads</Link>
+<Link href="/personal-info" className='mx-4'>Do Not Sell My Personal Information</Link>
+<Link href="/privacy-policy" className='mx-4'>Closed Captioning Inquiries</Link>
+<p className='mx-4 text-stone-600'>©2024 Story Surge. All Rights Reserved.</p>
 
 </div>
 </div>
