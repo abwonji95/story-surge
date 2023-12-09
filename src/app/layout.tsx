@@ -12,7 +12,7 @@ export const metadata:Metadata ={
   title:{
     absolute:"",
     default:"Story Surge",
-    template:"%s - Your Reading Companion",
+    template:"%s - Story Surge | Your Reading Companion.",
   },
   description: 'Explore. Engage. Evolve.',
 }
