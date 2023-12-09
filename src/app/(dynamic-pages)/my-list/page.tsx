@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'My List',
+    
+  }
+
 export default function MyList(){
     return (
         <div className="flex min-h-screen flex-col items-center justify-between p-24">
