@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+button-home{
+  background-color: transparent;
+  border-radius: 10px;
+  height: 2rem;
+
+}
+
+button-home:active{
+  background-color: gray;
+
+}
+ button-home:hover{
+  background-color: gray;
+ }

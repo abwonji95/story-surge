@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import React from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -44,7 +44,7 @@ export default function RootLayout({
     </div>
   </nav>
   {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
-  <div className="lg:hidden" role="dialog" aria-modal="true">
+  <div className="lg:hidden flex flex-col" role="dialog" aria-modal="true">
     {/* <!-- Background backdrop, show/hide based on slide-over state. -->*/}
     <div className="fixed inset-0 z-10"></div>
     <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -60,29 +60,13 @@ export default function RootLayout({
           </svg>
         </button>
       </div>
-      <div className="mt-6 flow-root">
+      <div className="mt-6 flow-root flex-col">
         <div className="-my-6 divide-y divide-gray-500/10">
-          <div className="space-y-2 block py-6">
-            <div className="-mx-3">
-              <button type="button" className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-                Product
-               {/* <!--
-                  Expand/collapse icon, toggle classNamees based on menu open state.
-
-                  Open: "rotate-180", Closed: ""
-                -->*/}
-                <svg className="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                </svg>
-              </button>
-              
+            <div className=" flex py-2 flex-col  gap-5">
+              <Link href="/" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</Link>
+              <Link href="/redeem" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Redeem</Link>
+              <Link href="/movies" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Movies</Link>
             </div>
-            <div className="py-2 block">
-            <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
-      <Link href="/redeem" className="text-sm font-semibold leading-6 text-gray-900">Redeem</Link>
-      <Link href="/movies" className="text-sm font-semibold leading-6 text-gray-900">Movies</Link>
-      </div>
-          </div>
           <div className="py-6">
             <Link href="/login" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</Link>
             <Link href="/signup" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Signup</Link>
