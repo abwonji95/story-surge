@@ -16,39 +16,36 @@ export const metadata:Metadata ={
 
 export default function MySets(){
     return (
-        <div className="w-full flex  p-5 rounded m-5">
-            <div className="w-full flex flex-col">
-            <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6">
-            <h2 className="text-white p-4">Introducing</h2>
-            <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">My Sets</h5>
+        <main>
+<div className="flex flex-col m-5">
+        <div className="float-left p-4 text-left bg-white border border-gray-200 rounded-lg  shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6">
+             <h2 className="text-gray-700 m-5">Introducing</h2>
+            <h5 className="text-3xl font-bold text-gray-900 dark:text-white m-5">My Sets</h5>
                 
-                <p><span>A new way to view — and grow — your collection.</span></p>
-                <Link href="/learn-more" className="bg-transparent mt-5 rounded flex-row bg-white"> <span>Learn More <GoChevronRight /> </span></Link>
+                <p><span className="m-5">A new way to view — and grow — your collection.</span></p>
+                <Link href="/learn-more" className="flex group text-blue-400 transition-all duration-300 ease-in-out m-5"> <span className="flex flex-row m-5 bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Learn More <GoChevronRight /></span></Link>
 
-            <div className="flex flex-col b text-dark float-right">
-                    <div className="float-right">
+        </div>
+        
+</div>
 
-                        <h1 className="text-black-400"> image goes here</h1>
-                </div>
-
+           
+            <div className="text-center items-center m-5 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6">
+         
+            <div className=" flex-row gap-6 p-6 text-center items-center">
+                <p><span className="flex-col"> O sets  Discovered</span></p>
+                <p><span className="flex-col"> O sets  Completed</span></p>
             </div>
 
             </div>
             
-            <div className="flex flex-row gap-6 p-6 text-center items-center">
-                <p><span> O sets  Discovered</span></p>
-                <p><span> O sets  Completed</span></p>
-            </div>
-
-
-            <div className="flex flex-col bg-gray-400 hover:bg-gray-500 rounded p-5">
+            
+            <div className="m-5 flex flex-col bg-gray-400 hover:bg-gray-500 rounded p-5">
                 <h1 className="text-white"> My sets</h1>
             </div>
 
-
-            </div>
-
             
-        </div>
+        
+        </main>
     )
 }
