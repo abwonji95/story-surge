@@ -4,6 +4,7 @@ import './globals.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { GoSearch } from "react-icons/go";
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -40,6 +41,7 @@ export default function RootLayout({
       <Link href="/books" className="text-sm font-semibold leading-6 text-gray-900">Books</Link>
     </div>
     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+    <GoSearch className="outline-black mr-6 w-6 h-6"/>
       <Link href="/login" className="mr-6 text-sm font-semibold leading-6 text-gray-900">Log in</Link>
       <Link href="/signup" className="mr-6 text-sm font-semibold leading-6 text-gray-900">Sign Up</Link>
     </div>
@@ -69,7 +71,9 @@ export default function RootLayout({
               <Link href="/movies" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Movies</Link>
             </div>
           <div className="py-6">
+            
             <Link href="/login" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</Link>
+            <GoSearch className="outline-black bg-black m-5 w-28" />
             <Link href="/signup" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Signup</Link>
           </div>
         </div>
