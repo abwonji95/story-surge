@@ -2,10 +2,16 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import './globals.css'
-export const metadata = {
-  title: 'Home - Story Surge | Your Reading Companion.',
-  
+import { Metadata } from 'next'
+export const metadata:Metadata ={
+  title:{
+    absolute:"",
+    default:"Story Surge",
+    template:"%s - Story Surge | Your Reading Companion.",
+  },
+  description: 'Explore. Engage. Evolve.',
 }
+
 
 export default function Home() {
   return (

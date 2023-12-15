@@ -1,3 +1,4 @@
+'use client'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -6,24 +7,25 @@ import Link from 'next/link'
 import React from 'react'
 import { GoSearch } from "react-icons/go";
 const inter = Inter({ subsets: ['latin'] })
+import { usePathname } from "next/navigation"
 
+const navLinks=[
+  {name:"Home ",href:"/"},
+  {name:"Redeem",href:"/redeem"},
+  {name:"Books",href:"/my-books"},
 
-
-export const metadata:Metadata ={
-  title:{
-    absolute:"",
-    default:"Story Surge",
-    template:"%s - Story Surge | Your Reading Companion.",
-  },
-  description: 'Explore. Engage. Evolve.',
-}
+]
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  
 }) { 
+  const pathname=usePathname();
+  
   return (
+    
     <html lang="en">
       <body className={inter.className}>
       <header className="bg-white">
@@ -31,14 +33,20 @@ export default function RootLayout({
     <div className="flex lg:flex-1 gap-6 text-xl w-full">
     <Image src="/logo.png" alt="logo" width={50} height={50} className='wfull h-full object-contain rounded-full gap-6'/>
       <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
-        <span className="text-sm font-semibold leading-6 text-gray-90">Story Surge</span>
+        <span className="leading-6 text-black text-lg font-semibold">Story Surge</span>
       </Link>
     </div>
     <div className="hidden lg:flex lg:gap-x-12">
+    {navLinks.map((link) =>{
+             const isActive= pathname.endsWith(link.href);
+            return(
+            
+                <Link href={link.href} key={link.name} className={isActive? "flex group text-black text-lg font-semibold transition-all duration-300 ease-in-out m-5 decoration-8 underline underline-blue underline-offset-8 ": "flex group text-black text-lg font-semibold  m-5 "}>{link.name}</Link>
+             
+            )
+        })}
 
-      <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
-      <Link href="/redeem" className="text-sm font-semibold leading-6 text-gray-900">Redeem</Link>
-      <Link href="/books" className="text-sm font-semibold leading-6 text-gray-900">Books</Link>
+    
     </div>
     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
     <GoSearch className="outline-black mr-6 w-6 h-6"/>

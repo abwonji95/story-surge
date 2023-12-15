@@ -2,3 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.underline { text-decoration-color: blue; 
+    text-decoration: underline
+    ; }
+
