@@ -29,7 +29,7 @@ export default function RootLayout({
       <header className="bg-white">
   <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div className="flex lg:flex-1 gap-6 text-xl w-full">
-    <Image src="/peakpx.jpg" alt="logo" width={100} height={100} className='wfull h-full object-contain rounded-full gap-6'/>
+    <Image src="/logo.png" alt="logo" width={50} height={50} className='wfull h-full object-contain rounded-full gap-6'/>
       <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
         <span className="text-sm font-semibold leading-6 text-gray-90">Story Surge</span>
       </Link>
