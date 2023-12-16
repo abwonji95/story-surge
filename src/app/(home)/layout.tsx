@@ -20,7 +20,7 @@ export default function HomeLayout({
     const pathname=usePathname();
     return (
         <aside className="w-full flex flex-col min-h-screen">
-        <div className="flex  items-right  gap-5 p-4 sticky top-0 bg-gray-500 w-full mb-5 opacity-95">
+        <div className="flex  items-right  gap-5 p-4 sticky top-0 bg-black w-full mb-5 opacity-90">
           
           {navLinks.map((link) =>{
              const isActive= pathname.endsWith(link.href);
