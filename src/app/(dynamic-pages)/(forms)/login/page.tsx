@@ -13,14 +13,15 @@ export const metadata = {
 
 export default function Login(){
     return (
-    <div className="flex min-h-screen flex-col items-center bg-gray-100 justify-between p-24">
+<div className="flex min-h-screen flex-col items-center bg-gray-100 justify-between p-24">
 <div className="login">
 
 
 
 <form className="form">
     <div className="flex-column">
-      <label>Email </label></div>
+      <label>Email </label>
+      </div>
       <div className="inputForm">
         <MdOutlineEmail/>
  

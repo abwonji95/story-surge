@@ -79,7 +79,7 @@ export default function Signup(){
     </div>
     <button className="button-submit">Sign Up</button>
     <p className="p">Already have an account? 
-    <Link href="/Login" className=""> <span className="span">Login</span></Link>
+    <Link href="/login" className=""> <span className="span">Login</span></Link>
 
     </p><p className="p line">Or With</p>
 

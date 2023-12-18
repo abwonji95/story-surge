@@ -7,12 +7,18 @@ export const metadata = {
 
 export default function MyBooks(){
     return (
-        <div className="min-h-screen flex-row block items-center justify-between p-24">
-          <div className="bg-gray-700 flex flex-col items-center rounded w-full m-5 p-5 h-96">
-            <h1 className="text-white text-center font-bold text-xl p-5"> Welcome</h1>
-            <p className=" text-white text-center font-medium text-lg p-5" >Login To Get Started</p>
-            <Link className="bg-blue-600 mt-10 h-10  border-2 rounded-full w-fit  text-sm text-center  flex justify-center align-middle align gap-3 cursor-pointer " href="/login" ><span className="text-white text-center m-2">Login</span></Link>
+        <div className="flex-row flex items-center p-5">
+          <div className="bg-none flex flex-col items-center text-black rounded w-full">
+            <h1 className=" text-center font-bold text-4xl p-5"> Welcome</h1>
+            <p className=" text-center font-medium text-xl p-5" >Login To Get Started</p>
+            <Link className=" bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-400 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800 " href="/login" ><span className="text-white text-center m-2">Login</span></Link>
 
+          </div>
+          <div className="show-content">
+
+            {/**
+             * content to be displayed  after login
+             */}
           </div>
 
     </div>
