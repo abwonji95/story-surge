@@ -1,7 +1,7 @@
 'use client'
 
 import "./style.css"
-  function submitCode() {
+  function submitCode():any {
     return(
       console.log("file submitted")
       )
@@ -25,14 +25,14 @@ export default function Redeem(){
         <div className="p-10">
         <form className="form">
             <div className="flex-column">
-              <label>Code </label>
+              <label htmlFor="redeem">Code </label>
               </div>
               <div className="inputForm">
          
-                <input type="text" id="email" className="input" placeholder="Enter your Code"/>
+                <input type="text" id="redeem" className="input" placeholder="Enter your Code"/>
               </div>
            
-            <button className="button-submit">Submit</button>
+            <button className="button-submit" onClick={submitCode()} >Submit</button>
            
         
             </form>

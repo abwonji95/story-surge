@@ -94,7 +94,7 @@ export default function RootLayout({
         
         {children}
         
-<footer className="bg-white">
+<footer className="bg-white bottom-0">
 <div className='mx-auto row-auto text-center mr-4 max-w-7xl space-y-2 block justify-center p-6 lg:px-8'>
 <div className='text-sm row-auto font-semibold leading-6 text-gray-900'>
 <Link href="/" className='mx-4'>Home</Link>
@@ -120,6 +120,7 @@ export default function RootLayout({
 
 </footer>
         </body>
+
     </html>
   )
 }

@@ -18,7 +18,7 @@ export default function BooksLayout({
   }) { 
     const pathname=usePathname();
     return (
-        <aside className="w-full flex flex-col min-h-screen">
+        <aside className="w-full flex flex-col min-h min-h-0">
         <div className="flex  items-right  gap-5 p-4 sticky top-0 bg-gray-500 w-full mb-5 opacity-95">
           
           {navLinks.map((link) =>{
@@ -31,7 +31,7 @@ export default function BooksLayout({
         })}
 
         </div>
-        <div className="w-full">
+        <div className="min-h-fit">
             {children}
         </div>
         </aside>
