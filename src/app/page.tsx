@@ -3,6 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import './globals.css'
 import { Metadata } from 'next'
+ import Carousel from './components/carousel/page'
+
 export const metadata:Metadata ={
   title:{
     absolute:"",
@@ -26,6 +28,7 @@ export default function Home() {
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
         <h1>carousel</h1>
+        <Carousel/>
       </div>
    
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
