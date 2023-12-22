@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 
 import { RxChevronLeft, RxChevronRight, RxDotFilled } from "react-icons/rx";
@@ -27,6 +27,8 @@ export default function Carousel(){
     },
   ];
 
+  const Ref = useRef(null);
+ 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -44,6 +46,15 @@ export default function Carousel(){
   const goToSlide = (slideIndex:any) => {
     setCurrentIndex(slideIndex);
   };
+
+  const autoSlider=()=>{
+    for (let i = 100; i > 0; i--) {
+      console.log("time remaining is => ", i)
+  }
+
+  }
+
+  useEffect(()=>{},[])
 
   return (
     <div>
