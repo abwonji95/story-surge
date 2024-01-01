@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import "./style.css"
   function submitCode():any {
     return(
@@ -18,8 +19,8 @@ export default function Redeem(){
         <h1 className="text-black font-bold text-4xl p-5 text-center justify-center text-clip items-center">Got a digital code? </h1>
         <p className="text-black font-normal  text-lg p-5 text-center justify-center text-clip items-center">
               Redeem it now!
-            At Story Surge, You can seamlessly store your favorite movies in one place so you can watch them when and where you want. Learn more
-            Before clicking on the REDEEM button, please see the terms and conditions below.
+            At Story Surge, You can seamlessly store your favorite books in one place so you can watch them when and where you want. Learn more
+            Before clicking on the REDEEM button, please read the  <Link href="/terms-conditions" className="text-blue-700 font-semibold"> Terms and Conditions </Link> .
             
             </p>
         
