@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
 
@@ -61,14 +62,15 @@ export default function Carousel(){
       <div className='max-w-full h-[780px] w-full m-auto py-16 px-4 '>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+        className='w-full h-full rounded-2xl bg-center bg-cover duration-500 text-white'
       ></div>
-      <div className="float-left text-black text-3xl font-semibold">
+      <div className=" flex flex-col float-left text-black text-xl font-semibold">
           <h1 className="text-justify">
             Text description text description text description
             text description text description
 
           </h1>
+          <Link href="/welcome" className="text-blue-700 flex flex-row"><span>Get Started   <RxChevronRight/></span></Link>
         </div>
       
       
