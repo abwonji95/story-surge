@@ -70,7 +70,7 @@ export default function Carousel(){
             text description text description
 
           </h1>
-          <Link href="/welcome" className="text-blue-700 flex flex-row"><span>Get Started   <RxChevronRight/></span></Link>
+          <Link href="/welcome" className="text-blue-700 flex flex-row"><span>Get Started <RxChevronRight/></span></Link>
         </div>
       
       
@@ -78,7 +78,7 @@ export default function Carousel(){
         
       <div className='py-2 float-right'>
         {slides.map((slide, slideIndex) => (
-          <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className='text-2xl cursor-pointer float-right'>
+          <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className='text-2xl cursor-pointer float-right '>
           <RxDotFilled />     
           </div>
         ))}
