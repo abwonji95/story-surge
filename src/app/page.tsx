@@ -33,36 +33,35 @@ export default function Home() {
       </div>
    
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>New releases</h1>
-        <Scroll/>
+       
+        <Scroll title="New Releases" url="/new-release"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Deals</h1>
-        <Scroll/>
+        
+        <Scroll title="Deals" url="/deals"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Award Winning</h1>
-        <Scroll/>
+        
+        <Scroll title="Award winning" url="/award-winning"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Must Haves</h1>
-        <Scroll/>
+        
+        <Scroll title="Must Haves" url="/must-haves"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Commedy</h1>
-        <Scroll/>
+        
+        <Scroll title="Comedy" url="/comedy"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Trending</h1>
-        <Scroll/>
+      
+        <Scroll title="Trending" url="/trending"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Popular collection</h1>
-        <Scroll/>
+       
+        <Scroll title="Popular" url="/popular"/>
       </div>
       <div className="p-4 text-left bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 gap-6 m-5">
-        <h1>Genres</h1>
-        <Scroll/>
+        <Scroll title="Genres" url="/genres"/>
       </div>
     </aside>
   )
